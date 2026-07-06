@@ -24,8 +24,8 @@ function App() {
 
     switch (pathname) {
       case "/":
-        title = "";
-        metaDescription = "";
+        title = "Шахбоз и Мохинур | Wedding Invitation";
+        metaDescription = "Приглашение на свадьбу Шахбоза и Мохинур.";
         break;
     }
 

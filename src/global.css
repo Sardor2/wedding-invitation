@@ -32,12 +32,24 @@ body {
   overflow-x: hidden;
   color: var(--color-ink);
   background:
-    radial-gradient(circle at top left, rgba(217, 194, 157, 0.32), transparent 34%),
-    radial-gradient(circle at top right, rgba(184, 149, 87, 0.18), transparent 26%),
+    radial-gradient(circle at top left, rgba(217, 194, 157, 0.2), transparent 90%),
+    radial-gradient(circle at top right, rgba(184, 149, 87, 0.12), transparent 90%),
     linear-gradient(180deg, #fefbf6 0%, #f8f1e8 42%, #f4eadf 100%);
   font-family: var(--font-body);
   line-height: 1.5;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -2;
+  background: url("/bg-image2.jpg") center / cover no-repeat;
+  opacity: 0.8;
+  filter: saturate(1) contrast(1);
+}
+
 
 * {
   box-sizing: border-box;
